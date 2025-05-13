@@ -4,7 +4,6 @@ import ProductGrid from '../components/Products/ProductGrid'
 import FeaturesSection from '../components/Feature/FeatureSection'
 import CategorySlider from '../components/utils/CategorySlider'
 
-
 const Homepage = () => {
   return (
     <>
