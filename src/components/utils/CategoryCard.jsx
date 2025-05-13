@@ -6,7 +6,7 @@ const CategoryCard = ({title,url = ''}) => {
     <div className="bg-white pt-8 pb-6 text-center max-w-[200px] rounded-md border border-gray-300 hover:border-branding-success-dark hover:border-3 hover:shadow-[0px_0px_12px_0px_rgba(32,181,38,0.32)] block  transition-all">
       <Link>
         <img
-          src="/public/images/CategoryIcon1.png"
+          src="/images/CategoryIcon1.png"
           alt=""
           className="mx-auto"
         />

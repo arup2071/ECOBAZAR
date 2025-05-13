@@ -6,7 +6,7 @@ const Preloader = () => {
     <div className="w-screen h-screen flex items-center justify-center bannerBg m-auto">
       <div className="w-48 h-48">
         <Lottie animationData={Animation} loop={true} />
-       <img src="/public/images/Logo.png" className="text-center w-full bg-no-repeat" alt="" />
+       <img src="/images/Logo.png" className="text-center w-full bg-no-repeat" alt="" />
       </div>
     </div>
   );

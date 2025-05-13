@@ -50,7 +50,7 @@ const MainHeader = () => {
         </div>
         <div className="logos col-span-3 lg:col-span-1">
           <Link to="/">
-            <img src="/public/images/Logo.png" className="m-auto" alt="" />
+            <img src="/images/Logo.png" className="m-auto" alt="" />
           </Link>
         </div>
         <div className="quickLinks col-span-1 lg:col-span-2 flex justify-end place-items-center gap-10">

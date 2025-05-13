@@ -8,7 +8,7 @@ const BannerSlider = () => {
       <div className="container grid lg:grid-cols-2 h-full items-center lg:gap-[43px]">
         <div className="bannerImg">
           <img
-            src="/public/images/bannerImg.png"
+            src="/images/bannerImg.png"
             className="w-full "
             alt=""
           />

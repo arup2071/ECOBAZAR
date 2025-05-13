@@ -10,14 +10,14 @@ const Cart = ({ open, onClose }) => {
       name: "Fresh Indian Orange",
       weight: "1 kg",
       price: 12.0,
-      image: "/public/images/OrangeCart.png",
+      image: "/images/OrangeCart.png",
     },
     {
       id: 2,
       name: "Green Apple",
       weight: "1 kg",
       price: 14.0,
-      image: "/public/images/featuredImg.png",
+      image: "/images/featuredImg.png",
     },
   ];
 
