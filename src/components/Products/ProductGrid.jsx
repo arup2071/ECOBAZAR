@@ -13,7 +13,7 @@ const ProductGrid = ({limit = 1}) => {
       });
   }, []);
   return (
-    <section id="featuredProducts">
+    <section id="featuredProduct" className="lg:py-20 py-10">
       <div className="container flex justify-between mb-10 place-items-center">
         <h2 className="text-[40px] leading-[120%] text-gray-900 font-semibold">
           Featured Products

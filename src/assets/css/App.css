@@ -49,3 +49,16 @@ body {
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
     background-color: var(--color-branding-success) !important;
 }
+
+.counterbg {
+    background-image: url(/public/images/counterBg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.trustbg {
+    background-image: url(/public/images/trustbg.png);
+}
+.categorybg {
+    background-image: url(/public/images/Categorybg.png);
+}

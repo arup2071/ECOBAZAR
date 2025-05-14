@@ -5,12 +5,15 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import CategoryCard from "./CategoryCard";
 import { useSelector } from "react-redux";
+import { Link } from 'react-router-dom';
+import { FaArrowRightLong } from "react-icons/fa6";
 
 const CategorySlider = () => {
   const category = useSelector((state) => state.category);
   console.log(category);
 
   return (
+    
     <Swiper
       spaceBetween={20}
       slidesPerView={2}
@@ -38,6 +41,7 @@ const CategorySlider = () => {
       }}
       className="w-full"
     >
+     
       {category?.map((item, index) => (
         <SwiperSlide key={item.slug}>
           <CategoryCard url={item.slug} title={item.name} />
