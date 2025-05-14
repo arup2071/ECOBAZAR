@@ -15,7 +15,10 @@ const Homepage = () => {
       <FeaturesSection />
       <ProductGrid limit={4} />
 
-      <section id="topCategory" className="py-[80px] bg-gray-100 categorybg">
+      <section
+        id="topCategory"
+        className="py-[80px] bg-[url('/images/Categorybg.png')]"
+      >
         <div className="container mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-10 px-4">
           <h2 className="text-2xl sm:text-3xl md:text-[40px] leading-snug text-gray-900 font-semibold">
             Shop by Top Categories

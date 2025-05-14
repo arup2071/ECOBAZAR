@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const TrustSection = () => {
   return (
-    <section className="w-full trustbg py-10 md:py-20">
+    <section className="w-full py-10 md:py-20 bg-[url('/images/trustbg.png')] bg-cover bg-no-repeat">
       <div className="container mx-auto flex flex-col md:flex-row items-center gap-8 md:gap-12 px-4">
         {/* Images */}
         <div className="flex flex-row gap-4 md:gap-6 w-full md:w-auto md:basis-1/2 justify-center">
@@ -54,9 +54,7 @@ const TrustSection = () => {
               </p>
             </div>
           </div>
-          <Link className="btn">
-            Shop Now &rarr;
-          </Link>
+          <Link className="btn">Shop Now &rarr;</Link>
         </div>
       </div>
     </section>

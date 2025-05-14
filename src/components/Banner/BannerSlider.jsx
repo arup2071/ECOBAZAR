@@ -4,14 +4,10 @@ import { Link } from "react-router-dom";
 
 const BannerSlider = () => {
   return (
-    <div className=" lg:h-[640px] bannerBg bg-gren-gray-scale-50 lg:mb-10 mb-8 ">
+    <div className=" lg:h-[640px] bg-[url('/images/bannerBg.png')] bg-cover bg-no-repeat  bg-gren-gray-scale-50 lg:mb-10 mb-8 ">
       <div className="container grid lg:grid-cols-2 h-full items-center lg:gap-[43px]">
         <div className="bannerImg">
-          <img
-            src="/images/bannerImg.png"
-            className="w-full "
-            alt=""
-          />
+          <img src="/images/bannerImg.png" className="w-full " alt="" />
         </div>
         <div className="bannerCnt px-3 lg:px-0">
           <h4 className="font-medium text-sm leading-full tracking-[0.02em] uppercase text-branding-success ">
@@ -29,7 +25,10 @@ const BannerSlider = () => {
           <p className="text-sm leading-[150%] text-gray-500 lg:mb-[30px] mb-[10px]">
             Free Shipping on all your order. we deliver, you enjoy
           </p>
-          <Link className="btn lg:mt-8 lg:mb-0 mb-8 lg:gap-2 gap-1 flex place-items-center" to="/">
+          <Link
+            className="btn lg:mt-8 lg:mb-0 mb-8 lg:gap-2 gap-1 flex place-items-center"
+            to="/"
+          >
             Shop Now <FaArrowRightLong />
           </Link>
         </div>

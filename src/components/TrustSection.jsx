@@ -7,26 +7,24 @@ const TrustSection = () => {
     <section className="w-full trustbg py-10 md:py-20">
       <div className="container mx-auto flex flex-col md:flex-row items-center gap-8 md:gap-12 px-4">
         {/* Images */}
-        <div className="relative flex flex-col items-center w-full md:w-auto md:basis-1/2 mb-8 md:mb-0">
-          {/* Bottom (large) image */}
-          <img
-            src="/images/TrustPhoto2.png"
-            alt="Man picking fruit"
-            className="rounded-xl w-40 h-40 sm:w-56 sm:h-56 md:w-72 md:h-72 object-cover shadow-md z-10"
-          />
-          {/* Top (small, overlapping) image */}
+        <div className="flex flex-row gap-4 md:gap-6 w-full md:w-auto md:basis-1/2 justify-center">
           <img
             src="/images/TrustPhoto1.png"
             alt="Farmer with apples"
-            className="rounded-xl w-24 h-24 sm:w-32 sm:h-32 object-cover shadow-lg border-4 border-white absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/3 z-20 md:left-[-40px] md:top-[-40px] md:translate-x-0 md:translate-y-0"
+            className="w-50 h-70"
+          />
+          <img
+            src="/images/TrustPhoto2.png"
+            alt="Man picking fruit"
+            className="w-100 h-100"
           />
         </div>
         {/* Content */}
-        <div className="flex-1 max-w-xl text-center md:text-left">
+        <div className="flex-1 max-w-xl">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-6">
             100% Trusted <br /> Organic Food Store
           </h2>
-          <div className="flex items-start gap-3 mb-4 justify-center md:justify-start">
+          <div className="flex items-start gap-3 mb-4">
             <span className="mt-1 text-green-500 bg-green-100 rounded-full p-1">
               <FiCheckCircle size={22} />
             </span>
@@ -41,7 +39,7 @@ const TrustSection = () => {
               </p>
             </div>
           </div>
-          <div className="flex items-start gap-3 mb-6 justify-center md:justify-start">
+          <div className="flex items-start gap-3 mb-6">
             <span className="mt-1 text-green-500 bg-green-100 rounded-full p-1">
               <FiCheckCircle size={22} />
             </span>
@@ -56,16 +54,11 @@ const TrustSection = () => {
               </p>
             </div>
           </div>
-          <Link
-            className="btn w-full md:w-auto inline-block text-center"
-            to="/shop"
-          >
-            Shop Now &rarr;
-          </Link>
+          <Link className="btn">Shop Now &rarr;</Link>
         </div>
       </div>
     </section>
   );
 };
 
-export default TrustSection; 
+export default TrustSection;
