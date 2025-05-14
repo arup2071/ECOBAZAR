@@ -9,12 +9,12 @@ const TrustSection = () => {
         {/* Images */}
         <div className="flex flex-row gap-4 md:gap-6 w-full md:w-auto md:basis-1/2 justify-center">
           <img
-            src="/public/images/TrustPhoto1.png"
+            src="/images/TrustPhoto1.png"
             alt="Farmer with apples"
             className="w-50 h-70"
           />
           <img
-            src="/public/images/TrustPhoto2.png"
+            src="/images/TrustPhoto2.png"
             alt="Man picking fruit"
             className="w-100 h-100"
           />
