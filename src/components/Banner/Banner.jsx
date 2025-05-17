@@ -26,7 +26,6 @@ const Banner = () => {
       modules={[Navigation, Pagination]}
 
       slidesPerView={1}
-      onSwiper={(swiper) => console.log(swiper)}
     >
       <div className="prevArrow lg:inline-flex hidden "><FiArrowLeft /></div>
       <div className="nextArrow lg:inline-flex hidden "><FiArrowRight /></div>

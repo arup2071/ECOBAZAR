@@ -7,7 +7,7 @@ const ProductCard = ({ product }) => {
   return (
     <div className="productCard group border border-gray-200 hover:border-green-500 rounded-lg overflow-hidden transition-all duration-300 relative  hover:shadow-[0px_0px_12px_0px_rgba(32,181,38,0.32)] bg-white">
       <div className="productThumb relative">
-        <Link>
+        <Link to={`/product/${product.id}`}>
           <p className="bg-branding-error text-white py-[3px] px-2 inline-block rounded-sm top-4 left-4 absolute text-sm">
             Save {product.discountPercentage}%
           </p>
@@ -42,7 +42,7 @@ const ProductCard = ({ product }) => {
             {product.price}$
           </del>
         </p>
-        <Rating count={product.rating} />
+        <Rating count={product?.rating} />
         <Link className="absolute top-1/2 right-5 transform -translate-y-1/2 w-10 h-10 flex justify-center items-center rounded-full transition bg-gray-100 group-hover:bg-green-500 text-gray-700 group-hover:text-white duration-300 ease-in-out">
           <FiShoppingBag />
         </Link>

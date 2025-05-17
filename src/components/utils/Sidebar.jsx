@@ -20,8 +20,8 @@ const Sidebar = ({
       <div
         className={`sidebarCnt w-full max-w-[350px] bg-white h-screen absolute duration-500 ease-in-out transform transition-all ${
           showSidebar
-            ? "translate-x-0 opacity-100" // Sidebar is visible on the left
-            : "-translate-x-full opacity-0" // Sidebar slides out to the left when hidden
+            ? "translate-x-0 opacity-100"
+            : "-translate-x-full opacity-0" 
         } position-${position}`}
       >
         {heading && (

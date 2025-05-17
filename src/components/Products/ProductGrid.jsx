@@ -24,7 +24,7 @@ const ProductGrid = ({limit = 1}) => {
       </div>
       <div className="container grid lg:grid-cols-4 grid-cols-2 md:grid-cols-3 gap-6">
         {products.map((product) => (
-          <ProductCard product={product} />
+          <ProductCard key={product.id} product={product} />
         ))}
       </div>
     </section>

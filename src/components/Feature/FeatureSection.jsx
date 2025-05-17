@@ -1,6 +1,6 @@
 import React from "react";
 import { FaShippingFast, FaHeadset } from "react-icons/fa";
-import FeatureCard from "../utils/FeatureCard"; // adjust path if needed
+import FeatureCard from "../utils/FeatureCard"; 
 import { BsBagCheck, BsFillBoxSeamFill } from "react-icons/bs";
 
 const FeaturesSection = () => {

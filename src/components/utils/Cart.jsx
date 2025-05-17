@@ -3,7 +3,6 @@ import { MdOutlineClose } from "react-icons/md";
 import { Link } from "react-router-dom";
 
 const Cart = ({ open, onClose }) => {
-  // Dummy cart items for UI
   const cartItems = [
     {
       id: 1,
@@ -27,10 +26,8 @@ const Cart = ({ open, onClose }) => {
         open ? "opacity-100 visible" : "opacity-0 invisible"
       }`}
     >
-      {/* Overlay */}
       <div onClick={onClose} className="absolute inset-0 bg-black/40" />
 
-      {/* Sidebar */}
       <div
         className={`
           fixed right-0 top-0 w-90 g:w-full h-full sm:w-[350px] max-w-full bg-white shadow-xl
@@ -39,7 +36,6 @@ const Cart = ({ open, onClose }) => {
           ${open ? "translate-x-0" : "translate-x-full"}
         `}
       >
-        {/* Header */}
         <div className="flex items-center justify-between px-5 py-4 border-b border-gray-400">
           <h2 className="text-base font-semibold">
             Shopping Card{" "}
@@ -57,7 +53,6 @@ const Cart = ({ open, onClose }) => {
           </Link>
         </div>
 
-        {/* Cart Items (scrollable) */}
         <div className="flex-1 overflow-y-auto px-5 py-2">
           {cartItems.map((item, idx) => (
             <div key={item.id}>
@@ -82,7 +77,6 @@ const Cart = ({ open, onClose }) => {
                   className="text-gray-400 hover:text-red-500 transition-colors text-lg"
                   aria-label="Remove"
                   tabIndex={0}
-                  // onClick={...} // Add your remove logic here if needed
                 >
                   <MdOutlineClose />
                 </Link>
@@ -94,7 +88,6 @@ const Cart = ({ open, onClose }) => {
           ))}
         </div>
 
-        {/* Bottom Summary & Actions (sticky at bottom) */}
         <div className="w-full px-5 pt-2 pb-5 bg-white border-t border-gray-200 sticky bottom-0">
           <div className="flex justify-between items-center mb-4 text-sm">
             <span className="font-normal">{cartItems.length} Product</span>

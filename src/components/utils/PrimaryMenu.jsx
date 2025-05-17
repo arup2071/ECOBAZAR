@@ -34,21 +34,22 @@ const PrimaryMenu = () => {
         <li key={menu.id} className="relative group">
           <NavLink
             className="font-medium text-[14px] text-gray-scale-gray--500 hover:text-gren-gray-scale-900"
-            to={menu.path} 
+            to={menu.path}
           >
             {menu.name}
           </NavLink>
           {menu.subMenus && (
             <ul className="subMenu group-hover:opacity-100 group-hover:visible mt-5 group-hover:mt-0 transition-all duration-300 opacity-0 invisible absolute z-10 bg-white py-4 px-5 border border-gray-300 min-w-[200px]">
-              {
-                menu.subMenus.map((item)=>(
-                  <li key={item.slug} className="my-2">
-                <NavLink to={item.slug} className="hover:text-branding-success text-sm font-medium text-gray-400 hover:pl-3 transition-all duration-300">
-                  {item.name}
-                </NavLink>
-              </li>
-                ))
-              }
+              {menu.subMenus.map((item) => (
+                <li key={item.slug} className="my-2">
+                  <NavLink
+                    to={`/category/${item.slug}`}
+                    className="hover:text-branding-success text-sm font-medium text-gray-400 hover:pl-3 transition-all duration-300"
+                  >
+                    {item.name}
+                  </NavLink>
+                </li>
+              ))}
             </ul>
           )}
         </li>

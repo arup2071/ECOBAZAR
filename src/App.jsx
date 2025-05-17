@@ -6,6 +6,8 @@ import Homepage from "./pages/Homepage";
 import Shop from "./pages/Shop";
 import Contact from "./pages/Contact";
 import Preloader from "./components/utils/Preloader";
+import Categories from "./pages/Categories";
+import SingleProduct from "./pages/SingleProduct";
 
 
 const App = () => {
@@ -14,11 +16,11 @@ const App = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 2600); // Duration of the preloader (2.5 seconds)
+    }, 2600); 
     return () => clearTimeout(timer);
   }, []);
 
-  if (loading) return <Preloader/>; // ⬅️ Show preloader before content
+  if (loading) return <Preloader/>; 
 
   return (
     <BrowserRouter>
@@ -27,6 +29,8 @@ const App = () => {
           <Route path="/" element={<Homepage />} />
           <Route path="/shop" element={<Shop />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/category/:name" element={<Categories />} />
+          <Route path="/product/:id" element={<SingleProduct />} />
         </Route>
       </Routes>
     </BrowserRouter>

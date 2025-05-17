@@ -6,7 +6,6 @@ const TrustSection = () => {
   return (
     <section className="w-full trustbg py-10 md:py-20">
       <div className="container mx-auto flex flex-col md:flex-row items-center gap-8 md:gap-12 px-4">
-        {/* Images */}
         <div className="flex flex-row gap-4 md:gap-6 w-full md:w-auto md:basis-1/2 justify-center">
           <img
             src="/images/TrustPhoto1.png"
@@ -19,7 +18,6 @@ const TrustSection = () => {
             className="w-100 h-100"
           />
         </div>
-        {/* Content */}
         <div className="flex-1 max-w-xl">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-6">
             100% Trusted <br /> Organic Food Store
