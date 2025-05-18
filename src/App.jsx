@@ -20,7 +20,7 @@ const App = () => {
     return () => clearTimeout(timer);
   }, []);
 
-  // if (loading) return <Preloader/>; 
+  if (loading) return <Preloader/>; 
 
   return (
     <BrowserRouter>

@@ -10,12 +10,12 @@ const TrustSection = () => {
           <img
             src="/images/TrustPhoto1.png"
             alt="Farmer with apples"
-            className="w-24 h-32 sm:w-32 sm:h-40 md:w-40 md:h-48 lg:w-50 lg:h-70"
+            className="w-32 h-40 sm:w-40 sm:h-52 md:w-48 md:h-60 lg:w-50 lg:h-70"
           />
           <img
             src="/images/TrustPhoto2.png"
             alt="Man picking fruit"
-            className="w-32 h-32 sm:w-40 sm:h-40 md:w-60 md:h-60 lg:w-100 lg:h-100"
+            className="w-40 h-48 sm:w-48 sm:h-56 md:w-72 md:h-80 lg:w-100 lg:h-100"
           />
         </div>
         <div className="flex-1 max-w-xl">
