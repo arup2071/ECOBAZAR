@@ -18,7 +18,7 @@ const Sidebar = ({
       }`}
     >
       <div
-        className={`sidebarCnt w-full max-w-[350px] bg-white h-screen absolute duration-500 ease-in-out transform transition-all ${
+        className={`sidebarCnt w-full max-w-[350px] bg-white h-screen absolute duration-500 ease-in-out transform transition-all overflow-y-auto ${
           showSidebar
             ? "translate-x-0 opacity-100"
             : "-translate-x-full opacity-0" 
