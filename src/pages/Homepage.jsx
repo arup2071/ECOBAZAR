@@ -23,7 +23,7 @@ const Homepage = () => {
           <h2 className="text-2xl sm:text-3xl md:text-[40px] leading-snug text-gray-900 font-semibold">
             Shop by Top Categories
           </h2>
-          <Link className="font-medium text-base sm:text-[16px] leading-[150%] text-branding-success flex gap-2 items-center">
+          <Link to='/shop' className="font-medium text-base sm:text-[16px] leading-[150%] text-branding-success flex gap-2 items-center">
             View All <FaArrowRightLong />
           </Link>
         </div>

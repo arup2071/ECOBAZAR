@@ -6,16 +6,16 @@ const TrustSection = () => {
   return (
     <section className="w-full trustbg py-10 md:py-20">
       <div className="container mx-auto flex flex-col md:flex-row items-center gap-8 md:gap-12 px-4">
-        <div className="flex flex-row gap-4 md:gap-6 w-full md:w-auto md:basis-1/2 justify-center">
+        <div className="flex flex-row gap-1 md:gap-6 md:basis-1/2 justify-center">
           <img
             src="/images/TrustPhoto1.png"
             alt="Farmer with apples"
-            className="w-50 h-70"
+            className="lg:w-50 lg:h-70 w-40 h-40"
           />
           <img
             src="/images/TrustPhoto2.png"
             alt="Man picking fruit"
-            className="w-100 h-100"
+            className="lg:w-100 lg:h-100 w-50 h-100"
           />
         </div>
         <div className="flex-1 max-w-xl">
