@@ -12,7 +12,6 @@ import {
   FaTwitter,
   FaPinterestP,
   FaInstagram,
-  FaShoppingBag,
 } from "react-icons/fa";
 import { AiOutlineHeart, AiFillHeart } from "react-icons/ai";
 import Rating from "../components/utils/Rating";
@@ -177,7 +176,7 @@ const SingleProduct = () => {
             <Link
               onClick={toggleFavorite}
               className={`ml-0 sm:ml-2 w-12 h-12 sm:w-9 sm:h-9 flex items-center justify-center rounded-full border border-gray-200 bg-green-600/10 shadow-sm text-2xl sm:text-base transition hover:bg-green-600/10 ${
-                isFavorited ? "text-red-500" : "text-green-600"
+                isFavorited ? "text-red-500" : "text-branding-success-dark"
               }`}
               aria-label="Add to Wishlist"
             >
@@ -185,16 +184,16 @@ const SingleProduct = () => {
             </Link>
           </div>
           <hr className="my-4 border-gray-200" />
-          <div className="mb-2 text-base sm:text-sm">
+          <div className="mb-2 text-base sm:text-sm capitalize">
             <span className="font-medium">Category:</span>{" "}
             {product?.category || "Vegetables"}
           </div>
-          <div className="flex flex-wrap items-center gap-2 text-base sm:text-sm">
+          <div className="flex flex-wrap items-center gap-2 text-base sm:text-sm capitalize">
             <span className="font-medium">Tags:</span>
             {product?.tags?.map((tag, index) => (
               <span
                 key={index}
-                className="bg-gray-100 text-gray-700 px-2 py-1 rounded text-sm"
+                className="bg-gray-100 text-gray-700 px-2 py-1 rounded text-sm capitalize"
               >
                 {tag}
               </span>

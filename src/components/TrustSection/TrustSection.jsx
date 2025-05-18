@@ -15,7 +15,7 @@ const TrustSection = () => {
           <img
             src="/images/TrustPhoto2.png"
             alt="Man picking fruit"
-            className="w-40 h-48 sm:w-48 sm:h-56 md:w-72 md:h-80 lg:w-100 lg:h-100"
+            className="w-48 h-48 sm:w-56 sm:h-56 md:w-80 md:h-80 lg:w-100 lg:h-100"
           />
         </div>
         <div className="flex-1 max-w-xl">

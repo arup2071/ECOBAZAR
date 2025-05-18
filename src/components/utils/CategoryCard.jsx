@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const CategoryCard = ({ title, url = "" }) => {
   return (
-    <div className="bg-white pt-4 sm:pt-6 md:pt-8 pb-4 sm:pb-5 md:pb-6 text-center w-full sm:max-w-[180px] md:max-w-[200px] rounded-md border border-gray-300 hover:border-branding-success-dark hover:border-3 hover:shadow-[0px_0px_12px_0px_rgba(32,181,38,0.32)] transition-all">
+    <div className="bg-white pt-4 sm:pt-6 md:pt-8 pb-4 sm:pb-5 md:pb-6 text-center w-full sm:max-w-[180px] md:max-w-[200px] rounded-md border border-gray-200 hover:border-branding-success-dark  overflow-hidden transition-all duration-300 relative  hover:shadow-[0px_0px_12px_0px_rgba(32,181,38,0.32)]">
       <Link to={`/category/${url}`}>
         <img
           src="/images/CategoryIcon1.png"
